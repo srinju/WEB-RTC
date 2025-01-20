@@ -17,3 +17,9 @@ so both of the client have their ice candidates and they send it to a signalling
 what the signalling server does is >
 
 the client sends the signaling server their ice candidates and the server sends it to another client , this happens for both of the clients
+
+after this process is done then the stun server and the signalling server can disconnect as the clients got each others ip addresses and the p2p conn is established
+
+so basically kill the stun server and the signalling server
+
+![alt text](image.png)
