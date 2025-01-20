@@ -71,3 +71,17 @@ for a video call between two person , there has to be two webrtc connections
 
 the first client will send an offer to anothe client and the other client gets the offert prepares the asnwer and also sends the offer to prev client and prev client also prepares answer
 fort the new offer . and this goes on for the media transmission
+
+# SDP (Session Description Protocol)
+
+after getting the ice candidates from the stun server when we send to the signalling server we share SDP which contains the ice candidates and a bunch of other things
+
+SDP contains the ice candidates ,  what media the client is sending  , what protocols they have used to encode the media and decode the media
+
+this SDP is shared when the offer and answer is sent
+
+![alt text](image-4.png)
+
+# RTC Peer connection >>
+
+this lets you create a webrtc connnection
